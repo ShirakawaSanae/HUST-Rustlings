@@ -5,12 +5,19 @@
 //
 // Execute `rustlings hint if2` or use the `hint` watch subcommand for a hint.
 
+pub fn print_foo() -> String {
+    "foo".to_string()
+}
 
-pub fn foo_if_fizz(fizzish: &str) -> &str {
+pub fn print_1() -> i32 {
+    1
+}
+
+pub fn foo_if_fizz(fizzish: &str){
     if fizzish == "fizz" {
-        "foo"
+        print_foo();
     } else {
-        "1"
+        print_1();
     }
 }
 
