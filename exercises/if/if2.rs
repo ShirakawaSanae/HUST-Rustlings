@@ -5,20 +5,15 @@
 //
 // Execute `rustlings hint if2` or use the `hint` watch subcommand for a hint.
 
-pub fn print_foo() -> String {
-    "foo".to_string()
-}
 
-pub fn print_1() -> i32 {
-    1
-}
-
-pub fn foo_if_fizz(fizzish: &str){
+pub fn foo_if_fizz(fizzish: &str) -> &str {
     if fizzish == "fizz" {
-        print_foo();
-    } else {
-        print_1();
-    }
+        "foo"
+    } else if fizzish == "fuzz" {
+        "bar"
+    } else if fizzish == "literally anything" {
+        "baz"
+    } else { "" }
 }
 
 // No test changes needed!
